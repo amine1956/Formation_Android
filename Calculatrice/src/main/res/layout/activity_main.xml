@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#0F436C"
+    android:backgroundTint="#00BCD4"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center">
+
+            <EditText
+                android:id="@+id/et_calc"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="#ECE187"
+                android:editable="false"
+                android:focusable="false"
+                android:inputType="none"
+                android:textSize="36sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp">
+
+            <Button
+                android:id="@+id/bt_1"
+                android:onClick="afiche1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/bt_2"
+                android:onClick="afiche2"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/bt_3"
+                android:onClick="afiche3"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btn_D"
+                android:onClick="aficheD"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp">
+
+            <Button
+                android:id="@+id/bt_4"
+                android:onClick="afiche4"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/bt_5"
+                android:onClick="afiche5"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/bt_6"
+                android:onClick="afiche6"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btn_M"
+                android:onClick="aficheM"
+                android:text="*" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp">
+
+            <Button
+                android:id="@+id/bt_7"
+                android:onClick="afiche7"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/bt_8"
+                android:onClick="afiche8"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/bt_9"
+                android:onClick="afiche9"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btn_S"
+                android:onClick="aficheS"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp">
+
+            <Button
+                android:id="@+id/bt_0"
+                android:onClick="afiche0"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/bt_clear"
+                android:onClick="vider"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/bt_dot"
+                android:onClick="afichePT"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btn_P"
+                android:onClick="aficheP"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp">
+
+            <Button
+                android:id="@+id/bt_result"
+                android:layout_width="58dp"
+                android:onClick="aficheE"
+                android:text="=" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
