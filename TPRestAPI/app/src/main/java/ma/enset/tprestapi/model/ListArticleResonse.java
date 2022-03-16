@@ -18,6 +18,7 @@ public class ListArticleResonse {
         this.totalCount = totalCount;
     }
 
+    
     public List<Article> getUsers() {
         return articles;
     }
